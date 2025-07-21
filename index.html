@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>曾偉豪 - 個人簡歷與作品集</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-standalone@7.22.9/babel.min.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+  <div id="root"></div>
+  <script type="text/babel">
+    const App = () => {
+      const exhibitions = {
+        solo: [
+          { year: 2000, title: "強力吸引", venue: "台南文賢油漆行，台南，台灣" },
+          { year: 2006, title: "電‧跡‧繫", venue: "台北當代藝術館，台北，台灣" },
+          { year: 2007, title: "樂TOUCH", venue: "台南藝術大學 南畫廊，台南，台灣" },
+          { year: 2007, title: "聲集", venue: "新竹教育大學 竹師藝術空間，新竹，台灣" },
+          { year: 2008, title: "擬在", venue: "台灣新藝，台南，台灣" ම
+
+System: 2008, title: "身音雜記", venue: "新苑藝術，台北，台灣" },
+          { year: 2011, title: "瞬間", venue: "真善美畫廊，台北，台灣" },
+          { year: 2013, title: "聲癮", venue: "台中中屯文藝中心，台中，台灣" },
+          { year: 2013, title: "鳴想（雙人展）", venue: "絕對空間，台南，台灣" },
+          { year: 2020, title: "收藏聲音", venue: "天母SOGO藝文空間，台北，台灣" },
+          { year: 2020, title: "狀聲詞Echoism 視覺藝術無障礙展覽", venue: "台南生活美學館，台南，台灣" },
+          { year: 2023, title: "內海Sound On 聲音藝術互動展", venue: "台灣歷史博物館，台南，台灣" },
+          { year: 2024, title: "祈聲 互動聲音裝置展", venue: "南投埔里紙教堂，南投，台灣" },
+          { year: 2025, title: "聲紋風景 互動聲音裝置展", venue: "台中大墩文化中心，台中，台灣" },
+        ],
+        group: [
+          { year: 2001, title: "台灣第一屆當代雕塑大展", venue: "華山藝文特區，台北，台灣" },
+          { year: 2002, title: "南極光－裝置與新藝術大展", venue: "台南新光三越 西門店，台南，台灣" },
+          { year: 2002, title: "CO2台灣前衛文件展", venue: "文化總會，台北，台灣" },
+          { year: 2025, title: "檔案/現成物 文賢油漆工程行異地保存創作計劃", venue: "C-LAB聯合餐廳展演空間，台北，台灣" },
+        ],
+      };
+
+      const awards = [
+        { year: 2003, title: "台北獎優選", venue: "台北市立美術館" },
+        { year: 2004, title: "國家文化藝術基金會93－2期創作補助", venue: "國家文化藝術基金會" },
+        { year: 2004, title: "青年繪畫作品典藏", venue: "文化建設委員會" },
+        { year: 2005, title: "台北美術獎首獎", venue: "台北市立美術館" },
+        { year: 2006, title: "第一屆台北數位藝術獎首獎", venue: "台北市文化局" },
+        { year: 2007, title: "青年繪畫作品典藏", venue: "文化建設委員會" },
+        { year: 2007, title: "世安美學獎 造形藝術類創作贊助", venue: "世安文教基金會" },
+        { year: 2009, title: "青年繪畫作品典藏", venue: "文化建設委員會" },
+      ];
+
+      const residencies = [
+        { period: "2006.1-2006.4", title: "英國倫敦GASWORKS駐村藝術家" },
+        { period: "2006.8-2006.10", title: "法國巴黎CAMAC駐村藝術家" },
+        { period: "2008.1-2008.3", title: "ACC獎助赴美國北卡羅萊納洲McColl Center" },
+        { period: "2008.4-2008.6", title: "ACC獎助赴紐約Point B駐村藝術家" },
+      ];
+
+      return (
+        <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+          <header className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-gray-800">曾偉豪 Tseng Wei-Hao</h1>
+            <p className="text-gray-600 mt-2">Email: <a href="mailto:Well-k@yahoo.com.tw" className="text-blue-600">Well-k@yahoo.com.tw</a></p>
+          </header>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">學歷 Education</h2>
+            <ul className="mt-4 space-y-2">
+              <li>1995-1999 國立台灣藝術學院 雕塑系畢業 藝術學士 B.F.A</li>
+              <li>1999-2004 國立台南藝術學院 造形藝術研究所畢業 藝術碩士 M.F.A</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">個展 Solo Exhibitions</h2>
+            <ul className="mt-4 space-y-2">
+              {exhibitions.solo.map((ex, index) => (
+                <li key={index}>{ex.year} 「{ex.title}」, {ex.venue}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">聯展 Group Exhibitions</h2>
+            <ul className="mt-4 space-y-2">
+              {exhibitions.group.map((ex, index) => (
+                <li key={index}>{ex.year} 「{ex.title}」, {ex.venue}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">獎項 Prizes</h2>
+            <ul className="mt-4 space-y-2">
+              {awards.map((award, index) => (
+                <li key={index}>{award.year} {award.title}, {award.venue}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">駐村 Residencies</h2>
+            <ul className="mt-4 space-y-2">
+              {residencies.map((res, index) => (
+                <li key={index}>{res.period} {res.title}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">創作自述 Artist Statement</h2>
+            <p className="mt-4 text-gray-700">
+              1977年出生於台灣台南市，1999年畢業於國立台灣藝術學院雕塑系，2004年畢業於國立台南藝術學院造形藝術研究所，畢業後居住及創作於臺灣南部的台南市。早期作品以磁鐵為材料的動態雕塑為主軸，當中無形卻實際存在磁力的能量表現一直是他關注的對象。研究所以後，延續早期作品的向度，都是對無形能量的關注，但作品轉向對聲音的研究。將無形的能量轉化為可視，並且追尋原初的價值一直是他作品表現的重要課題。
+            </p>
+            <p className="mt-4 text-gray-700">
+              我企圖在規格化控制的環境中找尋人的真實感受，希望透過簡單、基本、隨手可得的一些媒材，來尋找其中潛藏的可能性。「聲音」系列的作品，主要呈現出不可見的作用力、反動、無所謂和陌生的感官感受。我的創作雖然是由理性邏輯架構出發，媒材上也趨近於理性科學的範疇，但我所強調的不是技術上的魅力，而是精神意識的向度，也就是「真實的溝通」。
+            </p>
+            <p className="mt-4 text-gray-700">
+              I continually seek out real human feelings in a regularized and controlled environment and to this end utilize simple, basic and easily available materials to determine the possibilities contained therein. Series of works, “Sound’’, mainly attempted to highlight invisible efforts, reactions, the perceptual feeling of indifference and the unfamiliar. Although my works start life as part of a rational and logical framework and also tend to be categorized as rational and scientific in terms of media, the focus of these pieces is not technical appeal but rather spiritual consciousness, or what I would define as “real communication.”
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">作品集 Portfolio</h2>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gray-200 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold">作品名稱 (待更新)</h3>
+                <div className="aspect-w-16 aspect-h-9 bg-gray-300 flex items-center justify-center">
+                  <p className="text-gray-600">影片待更新 Video Placeholder</p>
+                </div>
+                <p className="mt-2 text-gray-700">作品說明：(請提供作品描述，待更新) Description to be updated.</p>
+              </div>
+              <div className="bg-gray-200 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold">作品名稱 (待更新)</h3>
+                <div className="aspect-w-16 aspect-h-9 bg-gray-300 flex items-center justify-center">
+                  <p className="text-gray-600">影片待更新 Video Placeholder</p>
+                </div>
+                <p className="mt-2 text-gray-700">作品說明：(請提供作品描述，待更新) Description to be updated.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      );
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
